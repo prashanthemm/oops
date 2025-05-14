@@ -1,0 +1,17 @@
+Class & Object
+
+class has data/attribute & func/methods
+    -> attribute gets called itself, methods are called manually
+    as soon as object is created, attribute is run, if you give a print statement in __init__,
+    you can see. Same is not true for methods.
+
+    __init__ is a constructor, that is run as soon as it is defined, you can add func to connect
+    internet or DB here, so that user doesn't have to
+
+    List, string, int are classes
+
+Why OOPS? Every thing (including data types, data structure etc) are objects
+    -> create your own datatype
+    -> reusable
+    -> debug
+    -> colab
