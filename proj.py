@@ -9,7 +9,7 @@ class chatbook:
     def menu(self):
         user_input = input("""Welcome to chat book?
                            1 to signup
-                           2 to signup
+                           2 to signin
                            3 to write a post
                            4 to messege
                            5 to exit\n""")
@@ -19,9 +19,9 @@ class chatbook:
         elif user_input == "2":
             self.signin()
         elif user_input == "3":
-            pass
+            self.post()
         elif user_input == "4":
-            pass
+            self.send()
         else:
             exit()
 
@@ -36,6 +36,7 @@ class chatbook:
     def signin(self):
         if self.username=='' and self.password=='':
             print("Signup first")
+            self.menu()
         else:
             uname = input("Enter your username : ")
             if(uname==self.username) :
@@ -47,10 +48,32 @@ class chatbook:
             if(upw==self.password):
                 print("Signed in successfully")
                 self.loggedin = True
+                self.menu()
             else:
                 print("Wrong password\n")
                 self.menu()
 
+    def post(self):
+        if self.loggedin == True:
+            text = input("What\'s on your mind today : ")
+            print(f"Your post : {text}\n")
+            self.menu()
+
+        else:
+            print("Signin first\n")
+            self.menu()
+
+    def send(self):
+        if self.loggedin == True:
+            frnd = input("Type your friend\'s name : ")
+            msg = input("Type your message : ")
+            print(f"Your message : {msg}\n has been sent to {frnd}\n")
+            self.menu()
+
+        else:
+            print("Signin first\n")
+            self.menu()
 
 
-obj = chatbook()
+
+user1 = chatbook()
