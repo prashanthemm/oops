@@ -53,3 +53,8 @@ attributes can be created outside of the class as well.
 Encapsulation
 
 some methods and some attributes are should be kept secret
+
+refer to onenote
+
+--------------------------------------------------------------
+

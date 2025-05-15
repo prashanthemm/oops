@@ -28,11 +28,14 @@ from proj import chatbook
 # ----------------------------------------------
 # static method
 
-user = chatbook()
-print(user.id)
+# user = chatbook()
+# print(user.id)
 
-chatbook.set_id(20001)
+# chatbook.set_id(20001)
 
-user2 = chatbook()
-print(user2.id)
+# user2 = chatbook()
+# print(user2.id)
+
+# ---------------------------------------------------
+
 
