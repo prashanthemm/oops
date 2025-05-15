@@ -19,3 +19,37 @@ Why OOPS? Every thing (including data types, data structure etc) are objects
 
 Refer to proj
 
+Func vs method
+len() is function.
+obj.send() is method.
+
+Object is needed to call the function.
+
+--------------------------------------
+
+Dunder method
+1) __init__ constructor that helps to create attributes
+More
+
+---------------------------------------
+Concept of self
+
+Self is the object
+id of self in __init__ and id of object will be Same
+
+If a method is called obj.teaches() which doesnot need
+any arguments, but self is given to it as as argument by default.
+obj and self in its call are same.
+
+Everytime a class is called, a new self is created on a different memory, and
+only that self can access that class instance
+
+----------------------------------------------------------
+
+attributes can be created outside of the class as well.
+
+------------------------------------------------------------
+
+Encapsulation
+
+some methods and some attributes are should be kept secret
