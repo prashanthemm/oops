@@ -58,3 +58,11 @@ refer to onenote
 
 --------------------------------------------------------------
 
+Inheritance
+Types
+
+simple, multilevel, hierchial duh
+
+multiple Inheritance (diamond problem)
+Method resolution Order(MRO)
+print(D.mro())
